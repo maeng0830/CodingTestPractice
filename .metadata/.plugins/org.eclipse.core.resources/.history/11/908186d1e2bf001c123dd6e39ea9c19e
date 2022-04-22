@@ -1,0 +1,14 @@
+package lecture01;
+
+public class Lecture01_02 {
+	public int solution(String str) {
+		return 0;
+	}
+	
+
+	public static void main(String[] args) {
+		Lecture01_02 T = new Lecture01_02();
+
+	}
+
+}
