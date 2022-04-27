@@ -12,7 +12,8 @@ public class Lecture01_04 {
 			for(int j = word.length()-1; j > -1; j--) {
 				answer = answer + word.charAt(j);
 			}
-			System.out.println(answer);			
+			System.out.println(answer);
+			
 		}
 	}
 

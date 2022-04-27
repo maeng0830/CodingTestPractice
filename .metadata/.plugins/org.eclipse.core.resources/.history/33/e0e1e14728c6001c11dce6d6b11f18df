@@ -4,15 +4,13 @@ import java.util.Scanner;
 
 public class Lecture01_04 {
 	public void solution(int n, String[] strs) {
-		String answer;
+		String[] answers = new String[n];
 		
-		for(int i = 0; i < n; i++) {
-			answer = "";
-			String word = strs[i];
-			for(int j = word.length()-1; j > -1; j--) {
-				answer = answer + word.charAt(j);
+		for(int i = 0; i < strs.length; i++) {
+			for(int j = strs[i].length(); j < 0; j--) {
+				answers[i] += strs[i].charAt(j);
 			}
-			System.out.println(answer);			
+			System.out.println(answers[i]);
 		}
 	}
 
@@ -27,6 +25,7 @@ public class Lecture01_04 {
 			strs[i] = kb.next();
 		}
 		
+
 		kb.close();
 		t.solution(n, strs);
 	}
